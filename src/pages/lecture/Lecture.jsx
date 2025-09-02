@@ -7,6 +7,7 @@ import Loading from "../../components/loading/Loading";
 import toast from "react-hot-toast";
 import { TiTick } from "react-icons/ti";
 
+
 const Lecture = ({ user }) => {
   const [lectures, setLectures] = useState([]);
   const [lecture, setLecture] = useState([]);
@@ -164,6 +165,8 @@ FormData ✅ → designed exactly for file + text uploads.
       console.log(error);
     }
   };
+
+  const completedLectures = progress[0]?.completedLectures.length;
 
   console.log(progress);
 
